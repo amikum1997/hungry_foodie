@@ -1,6 +1,6 @@
 :white_square_button: Create directory structure </br>
 :white_square_button: Create a NPM project and install all dependancies</br>
-    :ballot_box_with_check: Dependancies</br>
+&ensp;    :ballot_box_with_check: Dependancies</br>
         :ballot_box_with_check: express</br>
         :ballot_box_with_check: ejs express-ejs-layouts</br>
     :ballot_box_with_check: Dev dependancies</br>
