@@ -1,4 +1,4 @@
-[+] Create directory structure /n
+[+] Create directory structure \n
 [+] Create a NPM project and install all dependancies
     - Dependancies
         - express
