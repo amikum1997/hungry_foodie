@@ -40,7 +40,7 @@
 :white_square_button: Change order status</br>
 :white_square_button: Create Orders single page with status</br>
 :white_square_button: Order tracker</br>
-  &ensp;&ensp;  :white_square_button: Socket connection</br>
+  &ensp;&ensp;  :ballot_box_with_check: Socket connection</br>
    &ensp;&ensp;&ensp;&ensp;     :ballot_box_with_check: dependancies socket.io</br>
 :black_square_button: Build project for deployment</br>
 :black_square_button: Deploy project on live server</br>
