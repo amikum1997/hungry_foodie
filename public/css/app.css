@@ -60,7 +60,7 @@ section.cart {
   background: #f8f8f8;
 }
 
-.card-dish {
-  background: #DCDCDC;
+section.cart .amount {
+  color: #FE5F1E;
 }
 

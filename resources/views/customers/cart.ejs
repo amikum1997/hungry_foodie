@@ -1,7 +1,39 @@
-<section class="cart">
-    <div class="order ml-10 mr-10 mx-auto">
-        <div>
-            <img src="/img/cart-black" alt="cart">
+<section class="cart py-16">
+    <div class="order container mx-auto w-1/2">
+        <div class="flex items-center border-b border-gray-300 pb-4">
+            <img src="/img/cart-black.png" alt="cart">
+            <h1 class="font-bold ml-4 text-2xl">Order Summery</h1>
+        </div>
+        <div class="pizza-list">
+            <div class="flex items-center my-8">
+                <img class="w-24 rounded-md" src="/img/dish1.jpg" alt="">
+                <div class="flex-1 ml-4">
+                    <h1>Item1</h1>
+                    <span>Size</span>
+                </div>
+                <span class="flex-1">1 pcs</span>
+                <span class="font-bold text-lg">200</span>
+            </div>
+        </div>
+        <hr>
+        <div class="text-right py-4">
+            <div>
+                <span class="text-lg font-bold">Total Amount:</span>
+                <span class="amount text-2xl font-bold ml-2">$300</span>
+            </div>
+            <div>
+                <form action="" class="mt-12">
+                    <input class="border border-gray-400 p-2 w-1/2 mb-4" type="text" placeholder="phonenumber">
+                    <input class="border border-gray-400 p-2 w-1/2" type="text" placeholder="Address">
+                    <div>
+                        <button class="btn-primary px-6 py-2 rounded-full text-white font-bold mt-6" type="submit">Order
+                            Now</button>
+                    </div>
+                </form>
+            </div>
+            <a href=""
+                class="inline-block cursor-pointer px-6 btn-primary py-2 rounded-full text-white font-bold mt-6">Login
+                To Continue</a>
         </div>
     </div>
     <!-- <div class="emptycart">
