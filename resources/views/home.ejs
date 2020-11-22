@@ -10,27 +10,26 @@
         </div>
     </div>
 </section>
-<section class="menu ml-10 mr-10 py-8">
-    <h1 class="text-xl font-bold mb-8">All Dishes</h1>
-    <hr>
-    <div class="grid grid-cols-4 col-gap-12 row-gap-16 mt-10">
-        <div class="shadow-lg rounded-lg py-5 w-64">
-            <div>
-                <img class="h-40 mb-4 mx-auto rounded-md" src='/img/dish1.jpg' alt="dish">
-            </div>
+<section class="menu container mx-auto py-10">
+    <h1 class="px-6 text-xl font-bold mb-8">All Dishes</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-gap-12 row-gap-16">
+        <% items.forEach(function(items) { %>
+        <div class="py-8 px-8 w-full md:w-64 shadow-lg rounded-lg">
+            <img class="h-40 mb-4 mx-auto rounded-lg" src="/img/<%= items.image %>" alt="">
             <div class="text-center">
-                <h2 class="mb-4 text-lg">Burger</h2>
-                <span class="size py-1 px-4 rounded-full uppercase text-xs">small</span>
+                <h2 class="mb-4 text-lg"><%= items.name %></h2>
+                <span class="size py-1 px-4 rounded-full uppercase text-xs"><%= items.size %></span>
                 <div class="flex items-center justify-around mt-6">
-                    <span class="font-bold text-lg">$250</span>
-                    <button class="add-to-cart py-1 px-6 rounded-full flex items-center">
+                    <span class="font-bold text-lg">₹<%= items.price %></span>
+                    <button data-pizza="<%= JSON.stringify(items) %>"
+                        class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
                         <span>+</span>
                         <span class="ml-4">Add</span>
                     </button>
                 </div>
             </div>
-
         </div>
+        <% }) %>
 
     </div>
 </section>
