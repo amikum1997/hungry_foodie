@@ -9,6 +9,7 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 const flash = require('express-flash');
 const MongoDbStore = require('connect-mongo')(session)
+const passport = require('passport')
 
 const PORT = process.env.PORT || 4000;
 
@@ -21,6 +22,9 @@ connection.once('open', () => {
 }).catch(err => {
     console.log('Connection failed...')
 });
+
+
+
 //session store
 let mongoStore = new MongoDbStore({
     mongooseConnection: connection,
@@ -36,6 +40,14 @@ app.use(session({
     cookie: { maxAge: 1000 * 60 * 60 * 24 } //24 hours validity
 }))
 
+//passport config
+
+const passportInit = require('./app/config/passport')
+passportInit(passport)
+app.use(passport.initialize())
+app.use(passport.session())
+
+//configure flash
 app.use(flash())
 
 //assets
