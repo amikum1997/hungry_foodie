@@ -29,3 +29,10 @@ addToCart.forEach((btn) => {
         console.log(items)
     })
 })
+
+const alertMsg = document.querySelector('#success-alert')
+if (alertMsg) {
+    setTimeout(() => {
+        alertMsg.remove()
+    }, 2000)
+}
