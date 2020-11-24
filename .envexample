@@ -1,0 +1,3 @@
+PORT = 4000
+COOKIE_SECRET_KEY = absbabsbdbfjsmuhcyecjmhj
+MONGOOSE_URL = mongodb://localhost:27017/hungeryfoodie
