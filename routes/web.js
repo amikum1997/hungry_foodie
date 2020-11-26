@@ -15,12 +15,13 @@ function initRoutes(app) {
     app.get('/register', guest, authController().register)
     app.post('/register', authController().postRegister)
     app.post('/logout', authController().logout)
-    app.post('/orders', auth, orderController().store)
+
     //customer routes
     app.get('/cart', cartController().index)
     app.post('/update-cart', cartController().update)
     app.get('/customer/orders', auth, orderController().index)
     app.get('/customer/orders/:id', auth, orderController().show)
+    app.post('/orders', auth, orderController().store)
 
     //Admin routes
     app.get('/admin/orders', admin, adminOrderController().index)
