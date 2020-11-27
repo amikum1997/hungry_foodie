@@ -14,7 +14,7 @@ function updateCart(items) {
         new Noty({
             type: 'success',
             timeout: 1000,
-            text: 'Item Added To Cart'
+            text: 'Item Succefully Added To Cart'
         }).show();
     }).catch(err => {
         new Noty({
