@@ -42,5 +42,4 @@
 :white_square_button: Order tracker</br>
   &ensp;&ensp;  :ballot_box_with_check: Socket connection</br>
    &ensp;&ensp;&ensp;&ensp;     :ballot_box_with_check: dependancies socket.io</br>
-:black_square_button: Build project for deployment</br>
-:black_square_button: Deploy project on live server</br>
+:white_square_button:Payment gateway added (stripe)</br>
